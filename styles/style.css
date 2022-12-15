@@ -29,6 +29,6 @@ body {
 }
 
 .book__cover {
-  width: 350px;
+  width: 30%;
   background-color: pink;
 }
