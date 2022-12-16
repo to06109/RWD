@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: silver;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.group1 {
+  background-color: gold;
+}
+.group2 {
+  background-color: pink;
+}
+.group3 {
+  background-color: lightgreen;
+}
+.group4 {
+  background-color: skyblue;
+}
+.group5 {
+  background-color: salmon;
+}
+.group6 {
+  background-color: violet;
+}
+.group7 {
+  background-color: aquamarine;
+}
+.group8 {
+  background-color: lightseagreen;
+}
+.group9 {
+  background-color: mediumpurple;
+}
+.group10 {
+  background-color: midnightblue;
+}
+.group11 {
+  background-color: olive;
+}
+.group12 {
+  background-color: sandybrown;
+}
+
+/* 모든 디바이스 */
+div[class*='group'] {
+  width: 100%;
+  height: 50px;
+}
+
+/* 768 이상일 때만 */
+@media (min-width: 768px) {
+  div[class*='group'] {
+    width: 50%;
+    height: 100px;
+  }
+}
+
+/* 1280 이상일 때만 */
+@media (min-width: 1280px) {
+  div[class*='group'] {
+    width: 25%;
+    height: 200px;
+  }
+}
