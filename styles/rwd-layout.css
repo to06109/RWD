@@ -67,11 +67,26 @@ div[class*='group'] {
   div[class*='group'] {
     width: 50%;
   }
+
+  div.group1,
+  div.group4 {
+    width: 100%;
+  }
 }
 
 /* 1280 이상일 때만 */
 @media (min-width: 1280px) {
   div[class*='group'] {
     width: 25%;
+  }
+
+  /* 마지막에 배치 */
+  div.group2 {
+    order: 1;
+  }
+
+  div.group1,
+  div.group12 {
+    width: 75%;
   }
 }
