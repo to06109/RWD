@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: silver;
+  border: 1px solid red;
+}
+
+.group1 {
+  background-color: gold;
+}
+.group2 {
+  background-color: pink;
+}
+.group3 {
+  background-color: lightgreen;
+}
+.group4 {
+  background-color: skyblue;
+}
+.group5 {
+  background-color: salmon;
+}
+.group6 {
+  background-color: violet;
+}
+.group7 {
+  background-color: aquamarine;
+}
+.group8 {
+  background-color: lightseagreen;
+}
+.group9 {
+  background-color: mediumpurple;
+}
+.group10 {
+  background-color: midnightblue;
+}
+.group11 {
+  background-color: olive;
+}
+.group12 {
+  background-color: sandybrown;
+}
