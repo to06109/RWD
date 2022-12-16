@@ -6,11 +6,6 @@ body {
   margin: 0;
 }
 
-.container {
-  background-color: silver;
-  border: 1px solid red;
-}
-
 .group1 {
   background-color: gold;
 }
@@ -46,4 +41,41 @@ body {
 }
 .group12 {
   background-color: sandybrown;
+}
+
+.container {
+  background-color: silver;
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: auto;
+  padding: 24px;
+  gap: 24px;
+}
+
+[class*='group'] {
+  height: 150px;
+}
+
+/* Small Device */
+@media (max-width: 767px) {
+  .container {
+    /* 가상의 박스 만들기 */
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Medium Device */
+@media (min-width: 768px) {
+  .container {
+    /* 가상의 박스 만들기 */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Device */
+@media (min-width: 1280px) {
+  .container {
+    /* 가상의 박스 만들기 */
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
