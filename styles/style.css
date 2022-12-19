@@ -102,6 +102,32 @@ input[type='search'] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
+/* 공통 추천서적 */
+.book {
+  background-color: lightgreen;
+  grid-area: book;
+}
+/* 공통 새소식 */
+.news {
+  background-color: yellow;
+  grid-area: news;
+}
+/* 공통 게시판 */
+.board {
+  background-color: lightsalmon;
+  grid-area: board;
+}
+/* 공통 인기사이트 */
+.favorite {
+  background-color: skyblue;
+  grid-area: favorite;
+}
+/* 공통 트위터 */
+.twitter {
+  background-color: burlywood;
+  grid-area: twitter;
+}
+
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
   /* 모바일 헤더 */
@@ -213,13 +239,14 @@ input[type='search'] {
 
   /* 모바일 메인 콘텐츠 */
   .appMain {
-    grid-template-columns: 1fr 1fr; /* 생략 가능 */
+    grid-template-areas:
+      'book'
+      'news'
+      'board'
+      'favorite'
+      'twitter';
+    grid-template-columns: 1fr; /* 생략 가능 */
     grid-template-rows: auto; /* 생략 가능 */
-  }
-
-  /* 모바일 새소식 */
-  .news {
-    grid-area: 1/1/2/3;
   }
 }
 
@@ -277,6 +304,19 @@ input[type='search'] {
     font-weight: 700;
     /* x축 y축 블러 색상 양수방향, x축 y축 블러 색상 음수방향 */
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
+  }
+
+  /* 데스크탑 메인 콘텐츠 */
+  .appMain {
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      'news news news news news news news news news news news news'
+      'book book book book twitter twitter twitter twitter twitter favorite favorite favorite'
+      'book book book book . board board board board board board board';
+    gap: var(--spacing-base);
   }
 }
 
