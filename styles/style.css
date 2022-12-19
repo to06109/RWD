@@ -128,6 +128,22 @@ input[type='search'] {
   grid-area: twitter;
 }
 
+/* 공통 메인 콘텐츠 섹션 제목 */
+[class*='__title'] {
+  margin-bottom: var(--spacing-base);
+}
+
+[class*='__koTitle'] {
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
+.sprite {
+  color: white;
+  height: 3.75rem;
+  background-color: blue;
+}
+
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
   /* 모바일 헤더 */
