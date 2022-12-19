@@ -144,7 +144,11 @@ input[type='search'] {
 .sprite {
   height: 3.75rem;
   padding-left: 4rem;
-  background: blue url(../images/sprite_main.png) no-repeat;
+  background: url(../images/sprite_main.png) no-repeat;
+}
+
+.spriteBook {
+  background-position: 0 0;
 }
 
 .spriteBoard {
