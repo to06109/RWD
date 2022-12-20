@@ -102,6 +102,12 @@ input[type='search'] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
+/* 공통 메인 콘텐츠 섹션 본문 */
+.appMain [class*='__summary'] {
+  line-height: 1.6;
+  margin-top: var(--spacing-base);
+}
+
 /* 공통 추천서적 */
 .book {
   grid-area: book;
@@ -119,11 +125,11 @@ input[type='search'] {
 
 .book__coverCaption {
   margin-top: var(--spacing-md);
+  /* 단위 없는 넘버 단위: 현재 글자 크기 * 1.6배 = 줄높이 */
   line-height: 1.6;
 }
 
 .book__info {
-  background-color: pink;
   text-align: center;
   margin-top: var(--spacing-base);
 }
@@ -133,7 +139,6 @@ input[type='search'] {
 }
 
 .ratingStar {
-  background-color: yellow;
   display: block;
   font-size: var(--text-xl);
 }
