@@ -190,7 +190,6 @@ input[type='search'] {
 }
 
 .board__link {
-  background-color: pink;
   flex: 0 1 auto;
   /* 줄바꿈 방지 + ...처리 */
   white-space: nowrap;
@@ -204,7 +203,6 @@ input[type='search'] {
   /* 줄바꿈 방지 */
   flex-shrink: 0;
   width: 6.25em;
-  background-color: skyblue;
   text-align: right;
 }
 
@@ -401,6 +399,18 @@ input[type='search'] {
       'twitter';
     grid-template-columns: 1fr; /* 생략 가능 */
     grid-template-rows: auto; /* 생략 가능 */
+  }
+
+  /* 모바일 인기 사이트 */
+  .favorite__item {
+    margin-top: var(--spacing-sm);
+  }
+
+  .favorite__link::after {
+    content: attr(data-tooltip);
+    color: var(--accent-favorite);
+    font-size: var(--text-sm);
+    margin-left: var(--spacing-xs);
   }
 }
 
