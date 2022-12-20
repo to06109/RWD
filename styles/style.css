@@ -164,9 +164,46 @@ input[type='search'] {
 
 /* 공통 게시판 */
 .board {
-  /* background-color: lightsalmon; */
   grid-area: board;
+  display: flex;
+  flex-flow: row wrap;
 }
+
+.board__title {
+  flex: 1 1 auto;
+}
+
+.board__list {
+  order: 1;
+  flex: 1 1 auto;
+  /* 아이템 사이 간격 */
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-sm);
+}
+
+.board__item {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.board__link {
+  flex: 1 1 auto;
+  /* 줄바꿈 방지 + ...처리 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board__date {
+  /* 줄바꿈 방지 */
+  flex-shrink: 0;
+}
+
+.board__more {
+  padding-top: var(--spacing-sm);
+}
+
 /* 공통 인기사이트 */
 .favorite {
   /* background-color: skyblue; */
