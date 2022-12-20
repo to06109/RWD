@@ -41,12 +41,12 @@ video {
 .news__videoContainer {
   width: auto;
 }
+
 /* 가로가 100%일 때 세로는 56.25% */
 /* 9 / 16 = 0.5625 */
 
 /* 반응형 iframe */
 .iframeWrapper {
-  background-color: blueviolet;
   position: relative;
 }
 
