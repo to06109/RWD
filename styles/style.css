@@ -167,6 +167,7 @@ input[type='search'] {
   grid-area: board;
   display: flex;
   flex-flow: row wrap;
+  overflow: hidden;
 }
 
 .board__title {
@@ -174,6 +175,7 @@ input[type='search'] {
 }
 
 .board__list {
+  width: 100%;
   order: 1;
   flex: 1 1 auto;
   /* 아이템 사이 간격 */
@@ -191,7 +193,7 @@ input[type='search'] {
   background-color: pink;
   flex: 0 1 auto;
   /* 줄바꿈 방지 + ...처리 */
-  /* white-space: nowrap; */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   /* white-space 이슈 해결 */
