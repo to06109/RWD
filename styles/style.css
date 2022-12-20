@@ -137,6 +137,7 @@ input[type='search'] {
 }
 
 .book__info {
+  /* 자식 모두 가운데 정렬(img, figcaption) */
   text-align: center;
   margin-top: var(--spacing-base);
 }
