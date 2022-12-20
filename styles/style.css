@@ -249,6 +249,18 @@ input[type='search'] {
   margin-top: var(--spacing-xs);
 }
 
+/* 공통 푸터 */
+.appFooter {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: var(--spacing-lg);
+}
+
+.address {
+  margin-bottom: var(--spacing-sm);
+}
+
 /* 공통 메인 콘텐츠 섹션 제목 */
 [class*='__title'] {
   margin-bottom: var(--spacing-base);
@@ -439,6 +451,15 @@ input[type='search'] {
     color: var(--accent-favorite);
     font-size: var(--text-sm);
     margin-left: var(--spacing-xs);
+  }
+
+  /* 모바일 푸터 */
+  .appFooter {
+    text-align: left;
+  }
+
+  .address span {
+    display: block;
   }
 }
 
